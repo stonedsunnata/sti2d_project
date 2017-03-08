@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="refresh" content="10">
+	<link rel="stylesheet" href="index_css_1.css" />
+	<TITLE>www.easymusic.com</TITLE>
+	
+</head>
+
+<body>
+
+<img src="picture\logo_1.png" alt="logo_1">
+	
+<div class="menu_1">	
+	<ul id="menu">
+	
+		<li>
+			<a href="favorite_1.html">Favorite</a>
+		</li>
+		
+		<li>
+			<a href="songs_1.html">Songs</a>
+		</li>
+		
+		<li>
+		<a href="playlist_1.html">Playlist</a>
+		</li>
+		
+		<li>
+			<a href="album_1.html">Album</a>
+		</li>
+		
+		<li>
+			<a href="artist_1.html">Artist</a>
+		</li>
+		
+		<li>
+			<a href="editor_1.html">Editor</a>
+		</li>
+		
+		<li>
+			<a href="kind_1.html">kind</a>
+		</li>
+		
+		<li>
+			<a href="settings_1.html">Settings</a>
+			<ul>
+				<li><a href="configuration_1.html">Configuration</a></li>
+				<li><a href="audio_1.html">Audio</a></li>
+			</ul>
+		</li>
+
+	</ul>
+	
+<script type="text/javascript">
+
+	sfHover = function() {
+
+			var sfEls = document.getElementById("menu").getElementsByTagName("LI");
+
+			for (var i=0; i<sfEls.length; i++) {
+
+					sfEls[i].onmouseover=function() {
+
+							this.className+=" sfhover";
+
+					}
+
+					sfEls[i].onmouseout=function() {
+
+							this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+
+					}
+
+			}
+
+	}
+
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+	
+</script>
+</div>
+
+<br><br>
+
+</body>
+	
+</html>
